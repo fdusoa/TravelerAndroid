@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      body, html
+      {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;margin:0;
+        font-family:"微软雅黑";
+      }
+      #panorama
+      {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=FjIV2isch3350pbRlZ7mY7AA4df0vIg8"></script>
+</head>
+<body>
+  <div id="panorama"></div>
+  <script>
+    //全景图展示
+    var panorama = new BMap.Panorama('panorama');
+    panorama.setPosition(new BMap.Point(121.60448,31.196204)); //根据经纬度坐标展示全景图
+    panorama.setPov({heading: -40, pitch: 6});
+  </script>
+</body>
+</html>

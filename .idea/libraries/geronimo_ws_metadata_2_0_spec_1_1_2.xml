@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="geronimo-ws-metadata_2.0_spec-1.1.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/geronimo-ws-metadata_2.0_spec-1.1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

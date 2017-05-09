@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="mex-1.7.4-impl">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/mex-1.7.4-impl.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

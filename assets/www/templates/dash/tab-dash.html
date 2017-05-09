@@ -1,0 +1,38 @@
+<ion-view view-title="Trends">
+
+  <ion-floating-menu has-footer="true" menu-icon="ion-camera">
+    <ion-floating-item icon="ion-camera" ng-click="showInfo()" text="Capture""></ion-floating-item>
+    <ion-floating-item icon="ion-ios-cloud-upload" text="Upload" ng-click="goSettings()"></ion-floating-item>
+  </ion-floating-menu>
+
+  <ion-content class="background-grey">
+    <ion-refresher
+      pulling-text="Pull to refresh..."
+      on-refresh="doRefresh()">
+    </ion-refresher>
+    <ion-list class="card">
+      <ion-item ng-repeat="trend in trends" class="item-image full-image item-body">
+        <div ng-click="show($index)">
+          <h3 class="icon text-left"><i class="ion-social-google"></i> {{trend.title}}</h3>
+          <ion-slide-box on-slide-changed="slideHasChanged($index)">
+            <ion-slide ng-repeat="image in trend.images">
+              <div class="box yellow">
+                <img src="{{image.path}}" />
+              </div>
+            </ion-slide>
+          </ion-slide-box>
+          <p class="text-left icon-right">
+            <a href="#" class="subdued">{{trend.likes}} Like</a>
+            <a href="#" class="subdued">{{trend.comments}} Comments</a>
+            <a class="icon  float-right"><i class="ion-thumbsup"></i></a>
+          </p>
+
+        </div>
+      </ion-item>
+      <!--<div class="item item-divider">Others</div>-->
+      <!--<ion-item ng-repeat="other in others" ng-click="show(other.title)">-->
+        <!--{{other.title}}-->
+      <!--</ion-item>-->
+    </ion-list>
+  </ion-content>
+</ion-view>

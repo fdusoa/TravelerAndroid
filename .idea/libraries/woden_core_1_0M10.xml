@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="woden-core-1.0M10">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/woden-core-1.0M10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
